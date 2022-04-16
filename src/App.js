@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {
+  Container
+} from '@chakra-ui/react'
+import Card from './components/Card';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container
+    maxW="full"
+    h={400}
+    m={0}
+    borderBottomLeftRadius="3rem"
+    bgImage="url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%))"
+    bgSize="160%"
+    bgPosition="left"
+
+    >
+      <h1>Hola perras</h1>
+    </Container>
   );
 }
 
